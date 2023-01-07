@@ -1,0 +1,364 @@
+[
+  {
+    "Constant" : [
+      {
+        "doc" : "Key code mapping",
+        "def" : "DefaultKeyBinding.keyCodes",
+        "stripped_doc" : [
+          "Key code mapping"
+        ],
+        "desc" : "Key code mapping",
+        "notes" : [
+
+        ],
+        "signature" : "DefaultKeyBinding.keyCodes",
+        "type" : "Constant",
+        "returns" : [
+
+        ],
+        "name" : "keyCodes",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "A list of action methods which can be bound",
+        "def" : "DefaultKeyBinding.methods",
+        "stripped_doc" : [
+          "A list of action methods which can be bound"
+        ],
+        "desc" : "A list of action methods which can be bound",
+        "notes" : [
+
+        ],
+        "signature" : "DefaultKeyBinding.methods",
+        "type" : "Constant",
+        "returns" : [
+
+        ],
+        "name" : "methods",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "Directory of the DefaultKeyBinding.dict",
+        "def" : "DefaultKeyBinding.keyBindingsDir",
+        "stripped_doc" : [
+          "Directory of the DefaultKeyBinding.dict"
+        ],
+        "desc" : "Directory of the DefaultKeyBinding.dict",
+        "notes" : [
+
+        ],
+        "signature" : "DefaultKeyBinding.keyBindingsDir",
+        "type" : "Constant",
+        "returns" : [
+
+        ],
+        "name" : "keyBindingsDir",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "Full path to the DefaultKeyBinding.dict",
+        "def" : "DefaultKeyBinding.defaultKeyBindingPath",
+        "stripped_doc" : [
+          "Full path to the DefaultKeyBinding.dict"
+        ],
+        "desc" : "Full path to the DefaultKeyBinding.dict",
+        "notes" : [
+
+        ],
+        "signature" : "DefaultKeyBinding.defaultKeyBindingPath",
+        "type" : "Constant",
+        "returns" : [
+
+        ],
+        "name" : "defaultKeyBindingPath",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "Indent size of the DefaultKeyBinding.dict",
+        "def" : "DefaultKeyBinding.indentSize",
+        "stripped_doc" : [
+          "Indent size of the DefaultKeyBinding.dict"
+        ],
+        "desc" : "Indent size of the DefaultKeyBinding.dict",
+        "notes" : [
+
+        ],
+        "signature" : "DefaultKeyBinding.indentSize",
+        "type" : "Constant",
+        "returns" : [
+
+        ],
+        "name" : "indentSize",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "`false` if an error occurs during initialization",
+        "def" : "DefaultKeyBinding.initialized",
+        "stripped_doc" : [
+          "`false` if an error occurs during initialization"
+        ],
+        "desc" : "`false` if an error occurs during initialization",
+        "notes" : [
+
+        ],
+        "signature" : "DefaultKeyBinding.initialized",
+        "type" : "Constant",
+        "returns" : [
+
+        ],
+        "name" : "initialized",
+        "parameters" : [
+
+        ]
+      }
+    ],
+    "submodules" : [
+
+    ],
+    "Function" : [
+
+    ],
+    "Variable" : [
+
+    ],
+    "stripped_doc" : [
+
+    ],
+    "desc" : "Create DefaultKeyBinding.dict with Hammerspoon",
+    "Deprecated" : [
+
+    ],
+    "type" : "Module",
+    "Constructor" : [
+
+    ],
+    "doc" : "Create DefaultKeyBinding.dict with Hammerspoon\nCheck [this](https:\/\/web.archive.org\/web\/20161220060333\/http:\/\/osxnotes.net\/keybindings.html) about DefaultKeyBinding.dict\n\nUsage example:\n```lua\nlocal DefaultKeyBinding = hs.loadSpoon('DefaultKeyBinding')\nlocal m = DefaultKeyBinding.methods\nDefaultKeyBinding:writeBinding({\n    { { 'home' }, { m.moveToBeginningOfLine } },\n    { { 'end' }, { m.moveToEndOfLine } },\n    { { 'shift', 'home' }, { m.moveToBeginningOfLineAndModifySelection } },\n    { { 'shift', 'end' }, { m.moveToEndOfLineAndModifySelection } },\n    { { 'ctrl', 'home' }, { m.moveToBeginningOfDocument } },\n    { { 'ctrl', 'end' }, { m.moveToEndOfDocument } },\n    { { 'ctrl', 'shift', 'home' }, { m.moveToBeginningOfDocumentAndModifySelection } },\n    { { 'ctrl', 'shift', 'end' }, { m.moveToEndOfDocumentAndModifySelection } },\n    { { 'pageup' }, { m.pageUp } },\n    { { 'pagedown' }, { m.pageDown } },\n    { { 'shift', 'pageup' }, { m.pageUpAndModifySelection } },\n    { { 'shift', 'pagedown' }, { m.pageDownAndModifySelection } },\n    { { 'ctrl', 'x' }, {\n        { { 'ctrl', 'x' }, { m.insertText, '\"ctrl-x ctrl-x\"' } },\n    } },\n})\n```",
+    "Method" : [
+      {
+        "doc" : "Write DefaultKeyBinding.dict\n\nParameters:\n * bindings - Key binding list. Check the usage example.\n\nReturns:\n * The DefaultKeyBinding object",
+        "def" : "DefaultKeyBinding:writeBinding(bindings)",
+        "stripped_doc" : [
+          "Write DefaultKeyBinding.dict",
+          ""
+        ],
+        "desc" : "Write DefaultKeyBinding.dict",
+        "notes" : [
+
+        ],
+        "signature" : "DefaultKeyBinding:writeBinding(bindings)",
+        "type" : "Method",
+        "returns" : [
+          " * The DefaultKeyBinding object"
+        ],
+        "name" : "writeBinding",
+        "parameters" : [
+          " * bindings - Key binding list. Check the usage example.",
+          ""
+        ]
+      },
+      {
+        "doc" : "Remove DefaultKeyBinding.dict\n\nReturns:\n * The DefaultKeyBinding object",
+        "def" : "DefaultKeyBinding:removeBinding()",
+        "stripped_doc" : [
+          "Remove DefaultKeyBinding.dict",
+          ""
+        ],
+        "desc" : "Remove DefaultKeyBinding.dict",
+        "notes" : [
+
+        ],
+        "signature" : "DefaultKeyBinding:removeBinding()",
+        "type" : "Method",
+        "returns" : [
+          " * The DefaultKeyBinding object"
+        ],
+        "name" : "removeBinding",
+        "parameters" : [
+
+        ]
+      }
+    ],
+    "Command" : [
+
+    ],
+    "Field" : [
+
+    ],
+    "items" : [
+      {
+        "doc" : "Full path to the DefaultKeyBinding.dict",
+        "def" : "DefaultKeyBinding.defaultKeyBindingPath",
+        "stripped_doc" : [
+          "Full path to the DefaultKeyBinding.dict"
+        ],
+        "desc" : "Full path to the DefaultKeyBinding.dict",
+        "notes" : [
+
+        ],
+        "signature" : "DefaultKeyBinding.defaultKeyBindingPath",
+        "type" : "Constant",
+        "returns" : [
+
+        ],
+        "name" : "defaultKeyBindingPath",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "Indent size of the DefaultKeyBinding.dict",
+        "def" : "DefaultKeyBinding.indentSize",
+        "stripped_doc" : [
+          "Indent size of the DefaultKeyBinding.dict"
+        ],
+        "desc" : "Indent size of the DefaultKeyBinding.dict",
+        "notes" : [
+
+        ],
+        "signature" : "DefaultKeyBinding.indentSize",
+        "type" : "Constant",
+        "returns" : [
+
+        ],
+        "name" : "indentSize",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "`false` if an error occurs during initialization",
+        "def" : "DefaultKeyBinding.initialized",
+        "stripped_doc" : [
+          "`false` if an error occurs during initialization"
+        ],
+        "desc" : "`false` if an error occurs during initialization",
+        "notes" : [
+
+        ],
+        "signature" : "DefaultKeyBinding.initialized",
+        "type" : "Constant",
+        "returns" : [
+
+        ],
+        "name" : "initialized",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "Directory of the DefaultKeyBinding.dict",
+        "def" : "DefaultKeyBinding.keyBindingsDir",
+        "stripped_doc" : [
+          "Directory of the DefaultKeyBinding.dict"
+        ],
+        "desc" : "Directory of the DefaultKeyBinding.dict",
+        "notes" : [
+
+        ],
+        "signature" : "DefaultKeyBinding.keyBindingsDir",
+        "type" : "Constant",
+        "returns" : [
+
+        ],
+        "name" : "keyBindingsDir",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "Key code mapping",
+        "def" : "DefaultKeyBinding.keyCodes",
+        "stripped_doc" : [
+          "Key code mapping"
+        ],
+        "desc" : "Key code mapping",
+        "notes" : [
+
+        ],
+        "signature" : "DefaultKeyBinding.keyCodes",
+        "type" : "Constant",
+        "returns" : [
+
+        ],
+        "name" : "keyCodes",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "A list of action methods which can be bound",
+        "def" : "DefaultKeyBinding.methods",
+        "stripped_doc" : [
+          "A list of action methods which can be bound"
+        ],
+        "desc" : "A list of action methods which can be bound",
+        "notes" : [
+
+        ],
+        "signature" : "DefaultKeyBinding.methods",
+        "type" : "Constant",
+        "returns" : [
+
+        ],
+        "name" : "methods",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "Remove DefaultKeyBinding.dict\n\nReturns:\n * The DefaultKeyBinding object",
+        "def" : "DefaultKeyBinding:removeBinding()",
+        "stripped_doc" : [
+          "Remove DefaultKeyBinding.dict",
+          ""
+        ],
+        "desc" : "Remove DefaultKeyBinding.dict",
+        "notes" : [
+
+        ],
+        "signature" : "DefaultKeyBinding:removeBinding()",
+        "type" : "Method",
+        "returns" : [
+          " * The DefaultKeyBinding object"
+        ],
+        "name" : "removeBinding",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "Write DefaultKeyBinding.dict\n\nParameters:\n * bindings - Key binding list. Check the usage example.\n\nReturns:\n * The DefaultKeyBinding object",
+        "def" : "DefaultKeyBinding:writeBinding(bindings)",
+        "stripped_doc" : [
+          "Write DefaultKeyBinding.dict",
+          ""
+        ],
+        "desc" : "Write DefaultKeyBinding.dict",
+        "notes" : [
+
+        ],
+        "signature" : "DefaultKeyBinding:writeBinding(bindings)",
+        "type" : "Method",
+        "returns" : [
+          " * The DefaultKeyBinding object"
+        ],
+        "name" : "writeBinding",
+        "parameters" : [
+          " * bindings - Key binding list. Check the usage example.",
+          ""
+        ]
+      }
+    ],
+    "name" : "DefaultKeyBinding"
+  }
+]
