@@ -1,6 +1,10 @@
 # hammerspoon-DefaultKeyBinding
 Create DefaultKeyBinding.dict with Hammerspoon
 
+## Getting started
+* [Hammerspoon](https://github.com/Hammerspoon/hammerspoon)
+* [Hammerspoon Spoon](https://github.com/Hammerspoon/hammerspoon) 
+
 ## Usage example
 ```lua
 local DefaultKeyBinding = hs.loadSpoon('DefaultKeyBinding')
